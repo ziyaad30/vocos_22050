@@ -5,18 +5,18 @@ data:
   class_path: vocos.dataset.VocosDataModule
   init_args:
     train_params:
-      filelist_path: /home/yehor/Work/github/vocos/dataset/filelist_fixed.train
+      filelist_path: /kaggle/input/d/rustydusty/train-dataset/dataset/train2.txt
       sampling_rate: 22050
       num_samples: 16384
       batch_size: 32
-      num_workers: 8
+      num_workers: 2
 
     val_params:
-      filelist_path: /home/yehor/Work/github/vocos/dataset/filelist_fixed.val
+      filelist_path: /kaggle/input/d/rustydusty/train-dataset/dataset/valid2.txt
       sampling_rate: 22050
       num_samples: 48384
-      batch_size: 32
-      num_workers: 8
+      batch_size: 4
+      num_workers: 2
 
 model:
   class_path: vocos.experiment.VocosExp
