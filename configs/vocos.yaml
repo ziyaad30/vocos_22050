@@ -5,14 +5,14 @@ data:
   class_path: vocos.dataset.VocosDataModule
   init_args:
     train_params:
-      filelist_path: /kaggle/input/d/rustydusty/train-dataset/dataset/train2.txt
+      filelist_path: /kaggle/input/audio-dataset/dataset/train_audio.txt
       sampling_rate: 22050
       num_samples: 16384
       batch_size: 32
       num_workers: 2
 
     val_params:
-      filelist_path: /kaggle/input/d/rustydusty/train-dataset/dataset/valid2.txt
+      filelist_path: /kaggle/input/audio-dataset/dataset/valid_audio.txt
       sampling_rate: 22050
       num_samples: 48384
       batch_size: 4
